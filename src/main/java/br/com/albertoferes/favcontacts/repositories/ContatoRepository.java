@@ -9,4 +9,6 @@ import br.com.albertoferes.favcontacts.model.Contato;
 public interface ContatoRepository extends JpaRepository<Contato, Long>{
     
     public Contato findByNome(String model);
+
+    public Contato findByLinkedin(String lindekin);
 }
