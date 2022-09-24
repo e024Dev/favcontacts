@@ -14,6 +14,7 @@ public class Contato {
     private String nome;
     private String celular;
     private String email;
+    private String linkedin;
 
     public Contato() {
     }
@@ -55,11 +56,20 @@ public class Contato {
         this.email = email;
     }
 
+    public String getLinkedin() {
+        return linkedin;
+    }
+
+    public void setLinkedin(String linkedin) {
+        this.linkedin = linkedin;
+    }
+
     @Override
     public String toString() {
         return "Contato [id=" + id + 
         ", email=" + email + 
         ", celular=" + celular + 
+        ", linkedin=" + linkedin + 
         ", nome=" + nome + "]";
     }
     
